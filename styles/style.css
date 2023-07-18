@@ -24,14 +24,13 @@
 /* header styles */
 
 
-header {
-    margin: 40px 200px;
-}
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 40px;
+    margin: 40px 200px;
 }
 
 
@@ -93,38 +92,57 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 60px;
+    margin: 50px 200px 40px 0px;
 }
-.banner-details p{
+
+.banner-details {
+    background-image: url("../images/Group 14.png");
+    background-size: cover;
+    padding-left: 200px;
+    width: 50%;
+    height: 80vh;
+    
+}
+
+.banner-details p {
     margin: 15px 0px;
-    gap: 30px;
 }
+
 .banner-details>h3 {
     color: #0B0223;
     font-size: 48px;
     font-weight: 600;
+    margin-top: 100px;
 }
 
 .banner-details>h1 {
-    color: #F948B2 ;
+    color: #F948B2;
     font-size: 95px;
     font-weight: 800;
 
 }
 
-.banner-img{
-    width: 650px;
-    height: 600px;
+.banner-img {
+    width: 50%;
+    height: 80vh;
 }
 
-.banner-img>img{
+.banner-img>img {
     height: 100%;
     width: 100%;
 }
 
 
+/* online game styles */
+.online-game-container {
+    text-align: center;
+}
 
-
-
+.funny-videos-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 
 
@@ -136,6 +154,9 @@ header {
 
 
 @media screen and (max-width: 576px) {
+
+    /* naigation bar responsive styles */
+
 
     .nav-container,
     .menu-container {
@@ -151,6 +172,46 @@ header {
         width: 220px;
         height: 30px;
     }
+
+
+    /* banner responsibe styles */
+
+    .banner-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .banner-img {
+        width: 80vw;
+    }
+
+    .banner-details {
+        padding: 0px;
+        margin: 0px;
+        font-size: 50%;
+        text-align: center;
+        width: fit-content;
+    }
+    .banner-details>h3 {
+        font-size: 1.5rem;
+        margin-top: 100px;
+    }
+    
+    .banner-details>h1 {
+        font-size: 4rem;
+    
+    }
+
+    .button {
+        border-radius: 48px;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 10px 10px;
+        margin: 10px 0px;
+    }
+
+
 }
 
 
@@ -171,4 +232,41 @@ header {
         width: 200px;
         height: 30px;
     }
+
+    /* banner responsibe styles */
+    
+    .banner-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .banner-img {
+        width: 80vw;
+        height: auto;
+    }
+
+    .banner-details {
+        padding : 0px;
+        margin: 0px;
+        font-size: 70%;
+        text-align: center;
+        width: 80vw;
+        height: 100vh;
+    }
+    .banner-details>h3 {
+        font-size: 2rem;
+    }
+    
+    .banner-details>h1 {
+        font-size: 4rem;
+    
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 10px 10px;
+        margin: 10px 0px;
+    }
+
 }
