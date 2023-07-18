@@ -196,6 +196,57 @@
 
 
 
+/* play section styles */
+
+.play-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 200px;
+}
+
+.play-details>h3{
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.play-details>p{
+    color: #534C64;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.play-img-container{
+    display: flex;
+    position: sticky;
+    padding-left: 100px;
+}
+.large-img{
+    /* position: absolute; */
+}
+.small-img{
+    position: absolute;
+    border: 5px solid #FFF;
+    
+    transform: translateX(-180px);
+    transform: translateY(440px);
+    
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -329,6 +380,16 @@
         font-size: 1rem;
         padding: 10px 10px;
         margin: 10px 0px;
+    }
+
+
+
+
+     /* online game responsive styles */
+     .funny-videos-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
     }
 
 }
