@@ -7,15 +7,31 @@
     padding: 0px;
 }
 
+.button {
+    border-radius: 48px;
+    background: #FF42A5;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 40px;
+    margin: 20px 0px;
+}
+
+
 
 
 /* header styles */
+
+
+header {
+    margin: 40px 200px;
+}
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 240px;
 }
 
 
@@ -70,6 +86,40 @@
 }
 
 
+/* banner styles */
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+.banner-details p{
+    margin: 15px 0px;
+    gap: 30px;
+}
+.banner-details>h3 {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.banner-details>h1 {
+    color: #F948B2 ;
+    font-size: 95px;
+    font-weight: 800;
+
+}
+
+.banner-img{
+    width: 650px;
+    height: 600px;
+}
+
+.banner-img>img{
+    height: 100%;
+    width: 100%;
+}
 
 
 
@@ -81,19 +131,44 @@
 
 
 
-/* responsive styles */
+
+/* mobile responsive styles */
 
 
 @media screen and (max-width: 576px) {
-    .nav-container , .menu-container {
+
+    .nav-container,
+    .menu-container {
         flex-direction: column;
         margin-bottom: 40px;
     }
-    .nav-title-container{
+
+    .nav-title-container {
         margin-bottom: 40px;
     }
+
     .follow-container {
         width: 220px;
+        height: 30px;
+    }
+}
+
+
+
+
+
+
+/* tablet responsive styles */
+
+@media screen and (min-width: 576px) and (max-width:992px) {
+    .nav-container {
+        flex-direction: column;
+        row-gap: 40px;
+        margin: 40px 100px;
+    }
+
+    .follow-container {
+        width: 200px;
         height: 30px;
     }
 }
