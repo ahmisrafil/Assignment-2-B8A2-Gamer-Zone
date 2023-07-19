@@ -28,6 +28,7 @@
 .nav-container {
     display: flex;
     justify-content: space-between;
+    background-color: #FFF;
     align-items: center;
     margin-bottom: 40px;
     margin: 40px 200px;
@@ -267,6 +268,7 @@
 
 .games-button:hover{
     border: 2px solid #F948B2;
+    color: #FF42A5;
 
 }
 
