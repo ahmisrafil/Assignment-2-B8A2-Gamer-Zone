@@ -167,7 +167,7 @@
 
 /* hovering on img */
 
- .funny-videos {
+.funny-videos {
     position: relative;
 }
 
@@ -192,49 +192,52 @@
 
 .funny-videos:hover .icon-container {
     opacity: 1;
-} 
+}
 
 
 
 /* play section styles */
 
-.play-container{
+.play-container {
     display: flex;
     justify-content: space-between;
-    margin: 100px 200px;
+    margin: 100px 150px;
+    text-align: right;
+    padding-bottom: 100px;
 }
 
-.play-details>h3{
+.play-details>h3 {
     color: #0B0223;
     font-size: 3rem;
     font-weight: 700;
     margin-top: 120px;
     margin-bottom: 20px;
-    text-align: center;
 }
 
-.play-details>p{
+.play-details>p {
     color: #534C64;
     font-size: 1.1rem;
     font-weight: 400;
     margin-bottom: 20px;
-    text-align: center;
 }
-.play-img-container{
+
+.play-img-container {
     display: flex;
     position: sticky;
     padding-left: 100px;
 }
-.large-img{
-    /* position: absolute; */
+
+.large-img {
+    padding-left: 120px;
 }
-.small-img{
+
+.small-img {
     position: absolute;
     border: 5px solid #FFF;
-    
+
     transform: translateX(-180px);
-    transform: translateY(440px);
-    
+    transform: translateY(350px);
+
 
 }
 
@@ -242,6 +245,43 @@
 
 
 
+
+
+
+
+/* footer styles */
+.footer-container {
+    background-color: #0B0223;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 0px;
+    align-items: center;
+    row-gap: 40px;
+    margin-top: 50px;
+
+}
+
+.footer-list,
+.terms-container,
+.social-icon-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+}
+
+.footer-list>li,
+.terms-container>li {
+    list-style: none;
+}
+
+.terms-container>li , .footer-container>p{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-weight: 500;
+}
 
 
 
@@ -316,14 +356,68 @@
 
 
 
-        /* online game responsive styles */
-        .funny-videos-container {
-            flex-direction: column;
-            align-items: center;
-            
-        }
+    /* online game responsive styles */
+    .funny-videos-container {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    /* play section responsive styles */
+
+    .play-container {
+        flex-direction: column;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .play-img-container {
+        padding-left: 0px;
+        width: 80vw;
+        margin: 0px 40px;
+    }
+
+    .large-img {
+        padding-left: 30px;
+        width: 80%;
+    }
+
+    .small-img {
+        transform: translateY(150px);
+        width: 40%;
+    }
 
 
+
+
+
+    /* footer responsive styles */
+.footer-container {
+    padding:100px 0px;
+}
+
+.footer-list,
+.social-icon-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    row-gap: 30px;
+}
+
+.terms-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.footer-list>li,
+.terms-container>li {
+    list-style: none;
+}
+
+.terms-container>li , .footer-container>p{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-weight: 500;
+}
 }
 
 
@@ -385,11 +479,65 @@
 
 
 
-     /* online game responsive styles */
-     .funny-videos-container {
+    /* online game responsive styles */
+    .funny-videos-container {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        
+        grid-template-columns: repeat(2, 1fr);
+
     }
 
+
+    /* play section responsive styles */
+
+    .play-container {
+        flex-direction: column;
+        margin: 20px;
+        text-align: center;
+        margin: 20px 40px;
+    }
+
+    .large-img {
+        padding-left: 30px;
+        width: 80%;
+    }
+
+    .small-img {
+        transform: translateY(250px);
+        width: 40%;
+    }
+
+
+
+
+
+
+    /* footer responsive styles */
+.footer-container {
+    padding:100px 0px;
+}
+
+.footer-list,
+.social-icon-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 130px;
+    row-gap: 30px;
+}
+
+.terms-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 130px;
+    row-gap: 30px;
+}
+.footer-list>li,
+.terms-container>li {
+    list-style: none;
+}
+
+.terms-container>li , .footer-container>p{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-weight: 500;
+}
 }
