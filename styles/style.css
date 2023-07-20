@@ -133,6 +133,10 @@
     width: 100%;
 }
 
+#go-rogue-btn{
+    background-color:steelblue;
+}
+
 
 /* online game styles */
 
@@ -170,24 +174,24 @@
 
 .funny-videos {
     position: relative;
+    
 }
 
 .funny-videos>img {
     cursor: pointer;
     transition: filter 0.5s;
+    border: 3px solid transparent;
 }
 
 .icon-container {
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 40%;
-    transform: translate(-50%, -50%);
     opacity: 0;
-    transition: opacity 0.3s;
 }
 
 .funny-videos:hover #img {
-    filter: blur(5px);
+    opacity: 0.4;
     border: 3px solid #FF42A5;
 }
 
@@ -255,7 +259,7 @@
 .games-button {
     border-radius: 50px;
     background: #fff;
-    border: none;
+    border: 2px solid transparent;
     color: #0B0223;
     font-size: 20px;
     font-weight: 600;
